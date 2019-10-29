@@ -5,10 +5,10 @@
 
 ## Opis projektu
 Projekt do zadania opisanego poniżej:
-* Należy stworzyć projekt w opaarciu o załączony plik psd
+* Należy stworzyć projekt w oparciu o załączony plik psd
 
 ## Technologie
-Projekt stworzony w HTML i CSS
+Projekt stworzony w HTML i SASS
 
 ## Uruchomienie
 Projekt dostępny na GitHub Pages: https://lukassprawka.github.io/psd_to_html/
