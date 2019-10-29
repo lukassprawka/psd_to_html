@@ -1,0 +1,97 @@
+.posts
+  max-width: 1920px
+  margin: 0 auto
+  padding-bottom: 10%
+  background-color: #666
+
+  .logo
+    margin: 5% $margin-left-right 2%
+
+  .textbox
+    margin: 0 $margin-left-right
+    font-family: 'Saira Condensed', sans-serif
+    color: white
+    font-size: 40px
+    font-weight: bold
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-between
+
+  .column
+    flex-basis: 30%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 2% 0
+
+  .column .title
+    width: 100%
+    padding: 10px
+
+  .post
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  .rectangle
+    width: 25%
+    background-color: rgb(231, 76, 60)
+
+  .post p
+    width: 70%
+
+  h2
+    font-family: 'Saira Condensed', sans-serif
+    font-size: 14px
+
+  p
+    font-size: 12px
+    padding: 2px
+
+  .small
+    font-size: 10px
+
+  .about
+    font-style: italic
+    opacity: .8
+
+  img
+    max-width: 120px
+    margin: 5px 0
+
+@media (min-width: 360px) 
+  .posts
+    h2
+      font-size: $fontH2S
+
+    p
+      font-size: $font-posts-pS
+
+    .small
+      font-size: $posts-posts-smallS
+
+@media (min-width: 768px) 
+  .posts
+    h2
+      font-size: $fontH2M
+
+    p
+      font-size: $font-posts-pM
+
+    .small
+      font-size: $posts-posts-smallM
+
+@media (min-width: 1024px) 
+  .posts
+    .textbox
+      flex-direction: row
+
+    h2
+      font-size: $fontH2L
+
+    p
+      font-size: $font-posts-pL
+
+    .small
+      font-size: $posts-posts-smallL

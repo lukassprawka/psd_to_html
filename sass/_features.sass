@@ -1,0 +1,71 @@
+.features
+  max-width: 1920px
+  margin: 0 $margin-left-right
+  padding-top: 10%
+  text-align: center
+  color: #9A9A9A
+
+  h1
+    font-family: 'Saira Condensed', sans-serif
+    font-size: 20px
+    text-transform: uppercase
+    margin-bottom: 15px
+
+  h2
+    font-family: 'Saira Condensed', sans-serif
+    font-size: 14px
+    color: black
+    text-transform: uppercase
+
+  p
+    font-family: 'Saira', sans-serif
+    font-size: 10px
+    font-weight: 300
+    margin: 20px 0
+
+  img
+    max-width: 120px
+    margin: 5px 0
+
+@media (min-width: 360px) 
+  .features
+    h1
+      font-size: $fontH1S
+
+    h2
+      font-size: $fontH2S
+
+    p
+      font-size: $fontPS
+
+@media (min-width: 768px) 
+  .features
+    h1
+      font-size: $fontH1M
+
+    h2
+      font-size: $fontH2M
+
+    p
+      font-size: $fontPM
+
+    .feature img
+      max-width: 150px
+
+@media (min-width: 1024px) 
+  .features
+    .feature
+      float: left
+      width: 33%
+      padding: 30px
+
+    h1
+      font-size: $fontH1L
+
+    h2
+      font-size: $fontPL
+
+    p
+      font-size: 20px
+      line-height: 120%
+      padding: 0 10px

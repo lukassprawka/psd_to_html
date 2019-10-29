@@ -1,0 +1,186 @@
+.pudding
+  position: relative
+  height: 100vh
+  max-height: 768px
+  max-width: 1920px
+  margin: 0 auto
+  background-color: #DEE4E4
+
+  .transbox
+    width: 100%
+    height: 100%
+    background-image: url("../img/clown.png")
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+  .textbox
+    position: absolute
+    bottom: 10%
+    left: $margin-left-right
+    right: $margin-left-right
+    font-family: 'Saira Condensed', sans-serif
+    color: white
+    font-size: 40px
+    font-weight: bold
+    text-align: center
+
+  .logo
+    width: 150px
+
+  span
+    color: rgb(231, 76, 60)
+
+  h1
+    margin-top: 15px
+    font-size: 20px
+    text-transform: uppercase
+
+  h2
+    margin-top: 15px
+    font-size: 14px
+    font-weight: normal
+    color: #666
+    opacity: 0.9
+
+  button
+    margin-top: 15px
+    line-height: 32px
+    font-size: 10px
+    font-family: 'Saira', sans-serif
+    font-weight: 300
+    padding: 0 20px
+    text-transform: uppercase
+    color: white
+    background-color: rgb(231, 76, 60)
+    border: none
+    border-radius: 20px
+
+@media (orientation: portrait) and (min-width: 360px)
+  .pudding
+    h1
+      margin-top: $marginS
+      font-size: $fontH1S
+
+    h2
+      margin-top: $marginS
+      font-size: $fontH2S
+
+    button
+      margin-top: $marginS
+      font-size: $fontBS
+      line-height: calc(2 * #{$fontPS})
+
+@media (orientation: portrait) and (min-width: 768px)
+  .pudding
+    height: 50vh
+
+    .textbox
+      left: $margin-left-right
+      right: 48%
+      text-align: left
+
+    h1
+      margin-top: $marginM
+      font-size: $fontH1M
+
+    h2
+      margin-top: $marginM
+      font-size: $fontH2M
+
+    button
+      margin-top: $marginM
+      font-size: $fontBM
+      line-height: calc(2 * #{$fontPM})
+
+    .phone
+      width: 25%
+      transform: translate(50%, -50%)
+
+@media (orientation: portrait) and (min-width: 1024px)
+  .pudding
+    h1
+      margin-top: $marginL
+      font-size: $fontH1L
+
+    h2
+      margin-top: $marginL
+      font-size: $fontH2L
+
+    button
+      margin-top: $marginL
+      font-size: $fontBL
+      line-height: calc(2 * #{$fontPL})
+
+@media (orientation: landscape)
+  .pudding
+    .textbox
+      left: $margin-left-right
+      right: 48%
+      text-align: left
+
+    .transbox
+      background-size: contain
+      background-position: right
+
+@media (orientation: landscape) and (min-width: 640px)
+  .pudding .textbox
+    top: 5%
+
+    h1
+      margin-top: $marginS
+      font-size: $fontH1S
+
+    h2
+      margin-top: $marginS
+      font-size: $fontH2S
+
+    button
+      margin-top: $marginS
+      font-size: $fontBS
+      line-height: calc(2 * #{$fontPS})
+
+@media (orientation: landscape) and (min-width: 1024px)
+  .pudding
+    height: 50vh
+
+    .textbox
+      text-align: left
+
+    h1
+      margin-top: $marginM
+      font-size: $fontH1M
+
+    h2
+      margin-top: $marginM
+      font-size: $fontH2M
+
+    button
+      margin-top: $marginM
+      font-size: $fontBM
+      line-height: calc(2 * #{$fontPM})
+
+@media (orientation: landscape) and (min-width: 1280px)
+  .pudding
+    h1
+      margin-top: $marginL
+      font-size: $fontH1L
+
+    h2
+      margin-top: $marginL
+      font-size: $fontH2L
+
+    button
+      margin-top: $marginL
+      font-size: $fontBL
+      line-height: calc(2 * #{$fontPL})
+
+@media (min-width: 1024px)
+  .pudding
+    button
+      cursor: pointer
+      transition: .3s
+
+    button:hover
+      background-color: #fff
+      color: #111
